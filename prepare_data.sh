@@ -2,26 +2,26 @@
 
 # prepare_data - A shell script to prepare Nepali ASR Data from Google for DeepSpeech
 
-# echo '
-# --------------------------------------------------------
-#                     DATA DOWNLOAD
-# --------------------------------------------------------
-# '
+echo '
+--------------------------------------------------------
+                    DATA DOWNLOAD
+--------------------------------------------------------
+'
 
-# echo "[$(date +'%T')]: Starting Download..."
+echo "[$(date +'%T')]: Starting Download..."
 
-# fileids=$(echo 0; echo 1; echo 2; echo 3; echo 4; echo 5; echo 6; echo 7; echo 8; echo 9; 
-# echo a; echo b; echo c; echo d; echo e; echo f);
+fileids=$(echo 0; echo 1; echo 2; echo 3; echo 4; echo 5; echo 6; echo 7; echo 8; echo 9; 
+echo a; echo b; echo c; echo d; echo e; echo f);
 
-# for fileid in $fileids;
-# do  
-#     echo "Downloading asr_nepali_$fileid";
-#     wget "http://openslr.org/resources/54/asr_nepali_$fileid.zip" 
-# done;
+for fileid in $fileids;
+do  
+    echo "Downloading asr_nepali_$fileid";
+    wget "http://openslr.org/resources/54/asr_nepali_$fileid.zip" 
+done;
 
-# wget "http://openslr.org/resources/54/utt_spk_text.tsv"
+wget "http://openslr.org/resources/54/utt_spk_text.tsv"
 
-# echo "[$(date +'%T')]: Download Complete..."
+echo "[$(date +'%T')]: Download Complete..."
 
 echo '
 --------------------------------------------------------
